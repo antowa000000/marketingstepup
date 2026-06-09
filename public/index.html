@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Framework Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Marketing Framework Analyzer</h1>
+            <p>Transform your business description into actionable marketing frameworks</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>Business Description</h2>
+                <div class="form-group">
+                    <label for="businessDesc">Describe your business or what you promote</label>
+                    <textarea 
+                        id="businessDesc" 
+                        placeholder="Enter a detailed description of your business, products, services, target market, unique value proposition, etc."
+                        class="textarea-field"
+                        rows="8"
+                    ></textarea>
+                </div>
+                <button id="analyzeBtn" class="button-primary">Analyze Framework</button>
+            </section>
+
+            <div id="loadingSpinner" class="loading-spinner hidden">
+                <div class="spinner"></div>
+                <p>Analyzing your business description...</p>
+            </div>
+
+            <div id="resultsContainer" class="results-container hidden">
+                <section class="framework-section">
+                    <h2>SOSTAC Framework Analysis</h2>
+
+                    <article class="framework-module">
+                        <h3>1. Situation Analysis</h3>
+                        <div class="subsection">
+                            <h4>5C Framework</h4>
+                            <div id="fiveC" class="framework-content"></div>
+                        </div>
+                        <div class="subsection">
+                            <h4>SWOT Analysis</h4>
+                            <div id="swot" class="framework-content"></div>
+                        </div>
+                    </article>
+
+                    <article class="framework-module">
+                        <h3>2. Objectives</h3>
+                        <div id="smart" class="framework-content"></div>
+                    </article>
+
+                    <article class="framework-module">
+                        <h3>3. Strategy</h3>
+                        <h4>STP Framework</h4>
+                        <div id="stp" class="framework-content"></div>
+                    </article>
+
+                    <article class="framework-module">
+                        <h3>4. Tactics</h3>
+                        <h4>4Ps Framework</h4>
+                        <div id="fourPs" class="framework-content"></div>
+                    </article>
+
+                    <article class="framework-module">
+                        <h3>5. Actions</h3>
+                        <h4>4Ms Framework</h4>
+                        <div id="fourMs" class="framework-content"></div>
+                    </article>
+
+                    <article class="framework-module">
+                        <h3>6. Control</h3>
+                        <h4>KPI Suggestions</h4>
+                        <div id="kpi" class="framework-content"></div>
+                    </article>
+                </section>
+
+                <button id="resetBtn" class="button-secondary">Start Over</button>
+            </div>
+
+            <div id="errorContainer" class="error-container hidden">
+                <p id="errorMessage"></p>
+                <button id="errorCloseBtn" class="button-secondary">Dismiss</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built for strategic marketing analysis</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
