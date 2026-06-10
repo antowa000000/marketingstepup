@@ -4,8 +4,8 @@ Transform your business description into marketing frameworks using AI. This web
 
 ## Features
 
-- 🎯 **Claude-Powered Analysis**
-- 📊 **SOSTAC Framework** - Complete marketing strategy breakdown:
+-  **Claude-Powered Analysis**
+-  **SOSTAC Framework** - Complete marketing strategy breakdown:
   - **Situation**: 5C Framework + SWOT Analysis
   - **Objectives**: SMART(ER) Goals
   - **Strategy**: STP Framework  
@@ -16,7 +16,7 @@ Transform your business description into marketing frameworks using AI. This web
 -  **Secure** - Your API key stays on your machine (never sent to our servers)
 -  **Easy Setup** - One command to start
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - Node.js 18+ (for native fetch support)
 - npm or yarn
